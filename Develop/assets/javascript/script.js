@@ -1,18 +1,15 @@
 var schedule = {};
 
-
-
 // initialise session upon loading
 var sessionInit = function() {
     schedule = JSON.parse(localStorage.getItem("schedule"))
 
-
 };
 
-// function for saving tasks
+// function for saving schedule
 var saveSchedule = function() {
     localStorage.setItem("schedule", JSON.stringify(schedule));
-  };
+};
 
 // edit a paragraph element
 $(".list-group").on("click", "p", function() {
@@ -33,13 +30,8 @@ $(".list-group").on("blur", "textarea", function() {
       .val()
       .trim();
 
-    // get parent ul's id
-    var status = $(this)
-        .closest(".list-group-item")
-        .index();
-  
     // save to local storage
-    schedule[status].text = text;
+    schedule.text = text;
     saveSchedule();
   
     // recreate p element
