@@ -1,0 +1,47 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+.jumbo-border {
+    border-bottom: solid black 20px;
+    
+}
+li h4 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: right;
+    border-bottom: dotted black 2px;
+    border-right: solid black 2px;
+}
+.list-h4 {
+    border-top: dotted black 2px;
+}
+li button {
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #12AFC9;
+    text-align: left;
+}
+li button:hover {
+    color: black;
+}
+.past-time {
+    margin: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #CCCCCC;
+}
+.present-time {
+    margin: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #F14D57;
+}
+.future-time {
+    margin: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #74E96E;
+}
